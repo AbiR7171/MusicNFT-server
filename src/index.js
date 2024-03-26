@@ -21,6 +21,7 @@ app.use(express.urlencoded({
 app.use(cors());
 app.use(express.static(__dirname + "/Public"));
 app.use(express.static(__dirname + "/UI"));
+app.use("/", route)
 app.get('/', (req, res) => {
     res.send("Music NFT Server is Live");
 });
